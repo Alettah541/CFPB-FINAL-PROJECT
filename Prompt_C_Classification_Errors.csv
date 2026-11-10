@@ -1,0 +1,14 @@
+complaint_id,category_actual,category_predicted
+2343804,other,account_management
+2147445,rewards_marketing,fraud_identity
+1505359,rewards_marketing,account_management
+1430986,account_management,billing_dispute
+2261835,rewards_marketing,account_management
+1782738,collections_hardship,billing_dispute
+1411360,account_management,fraud_identity
+2332870,fees_interest,rewards_marketing
+1563609,other,rewards_marketing
+1998879,fees_interest,collections_hardship
+2207691,other,billing_dispute
+2427091,billing_dispute,other
+2075906,billing_dispute,fees_interest
