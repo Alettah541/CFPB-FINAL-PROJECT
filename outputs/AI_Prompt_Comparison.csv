@@ -1,4 +1,4 @@
-Prompt,Accuracy,Macro Precision,Macro Recall,Macro F1
-A,0.433,0.309,0.301,0.301
-B,0.467,0.344,0.426,0.359
-C,0.567,0.361,0.381,0.366
+Prompt,Accuracy,Accuracy (excl. other),Macro Precision,Macro Recall,Macro F1
+A,0.433,0.481,0.353,0.344,0.344
+B,0.467,0.519,0.393,0.486,0.41
+C,0.567,0.63,0.413,0.435,0.418
