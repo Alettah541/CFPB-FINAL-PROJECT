@@ -1,9 +1,9 @@
 ,Full Dataset Count,Test Sample Count,Full Dataset %,Test Sample %
-billing_dispute,4239,7.0,23.2,23.3
-account_management,3388,3.0,18.5,10.0
-rewards_marketing,2366,6.0,12.9,20.0
-fraud_identity,2254,6.0,12.3,20.0
-fees_interest,2126,4.0,11.6,13.3
-other,1890,3.0,10.3,10.0
-collections_hardship,1067,1.0,5.8,3.3
-customer_service,946,0.0,5.2,0.0
+billing_dispute,4239,4,23.2,13.3
+account_management,3388,4,18.5,13.3
+rewards_marketing,2366,4,12.9,13.3
+fraud_identity,2254,4,12.3,13.3
+fees_interest,2126,4,11.6,13.3
+other,1890,4,10.3,13.3
+collections_hardship,1067,3,5.8,10.0
+customer_service,946,3,5.2,10.0
