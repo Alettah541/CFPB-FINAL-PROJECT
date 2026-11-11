@@ -1,0 +1,31 @@
+label_id,complaint_id,date_received,issue,category
+H01,2135252,2016-09-27,Delinquent account,collections_hardship
+H02,2179522,2016-10-26,Credit card protection / Debt protection,rewards_marketing
+H03,2236639,2016-12-05,Other fee,fees_interest
+H04,1567741,2015-09-16,Customer service / Customer relations,customer_service
+H05,1486897,2015-07-25,Credit determination,account_management
+H06,1727174,2016-01-04,Customer service / Customer relations,customer_service
+H07,2170660,2016-10-21,Other,other
+H08,1696875,2015-12-14,Balance transfer,account_management
+H09,1867094,2016-04-06,Late fee,fees_interest
+H10,2341734,2017-02-13,Late fee,fees_interest
+H11,1675329,2015-11-30,Credit card protection / Debt protection,rewards_marketing
+H12,1800675,2016-02-24,APR or interest rate,fees_interest
+H13,2393126,2017-03-17,Rewards,rewards_marketing
+H14,2307355,2017-01-25,Billing disputes,billing_dispute
+H15,1332350,2015-04-15,Identity theft / Fraud / Embezzlement,fraud_identity
+H16,1781185,2016-02-10,Delinquent account,collections_hardship
+H17,1947729,2016-06-01,Credit line increase/decrease,account_management
+H18,2274484,2017-01-04,Other,other
+H19,2154642,2016-10-11,Billing disputes,billing_dispute
+H20,1668948,2015-11-23,Customer service / Customer relations,customer_service
+H21,1656987,2015-11-16,Billing disputes,billing_dispute
+H22,1450612,2015-07-03,Identity theft / Fraud / Embezzlement,fraud_identity
+H23,1795948,2016-02-19,Other,other
+H24,1373036,2015-05-13,Identity theft / Fraud / Embezzlement,fraud_identity
+H25,2348150,2017-02-16,Delinquent account,collections_hardship
+H26,1548847,2015-09-02,Transaction issue,billing_dispute
+H27,1678131,2015-12-01,Identity theft / Fraud / Embezzlement,fraud_identity
+H28,1667049,2015-11-21,Credit determination,account_management
+H29,1988946,2016-06-28,Other,other
+H30,1355176,2015-04-30,Rewards,rewards_marketing
