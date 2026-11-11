@@ -1,0 +1,14 @@
+# Secrets
+.env
+
+# Jupyter / Python
+.ipynb_checkpoints/
+__pycache__/
+
+# OS clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Office lock files (created while a .docx/.xlsx is open)
+~$*
