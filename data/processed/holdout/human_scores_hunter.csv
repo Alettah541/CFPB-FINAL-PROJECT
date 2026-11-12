@@ -1,0 +1,16 @@
+rater,brief,dimension,score,justification
+hunter,Brief 1,grounding,2,list/ID mismatches
+hunter,Brief 1,recurring_issues,3,ranks issues; approx counts; billing_dispute unnamed
+hunter,Brief 1,actionability,4,"recs name issue, cite IDs, process changes"
+hunter,Brief 1,clarity,3,priority bolded mid-brief; no bottom line
+hunter,Brief 1,transparency,2,no limits section
+hunter,Brief 2,grounding,2,fraud count 6 vs 5 in own list
+hunter,Brief 2,recurring_issues,2,fraud ranked 3rd despite highest count
+hunter,Brief 2,actionability,3,concrete recs but no complaint IDs
+hunter,Brief 2,clarity,3,P1-P3 section useful; no bottom line up front
+hunter,Brief 2,transparency,2,no limits; mismatched count stated as fact
+hunter,Brief 3,grounding,3,counts match list
+hunter,Brief 3,recurring_issues,4,all 3+ categories with counts and IDs; ranked
+hunter,Brief 3,actionability,4,"recs name issue, cite IDs, concrete process changes"
+hunter,Brief 3,clarity,4,bottom line up front; easy to scan
+hunter,Brief 3,transparency,4,"method, ambiguity flags, limits; no date range"

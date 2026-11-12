@@ -1,0 +1,86 @@
+{
+  "A_eval": {
+    "grounding": 2,
+    "recurring_issues": 3,
+    "actionability": 3,
+    "clarity": 3,
+    "transparency": 2
+  },
+  "B_eval": {
+    "grounding": 2,
+    "recurring_issues": 2,
+    "actionability": 3,
+    "clarity": 3,
+    "transparency": 1
+  },
+  "C_eval": {
+    "grounding": 3,
+    "recurring_issues": 3,
+    "actionability": 4,
+    "clarity": 3,
+    "transparency": 4
+  },
+  "A_run1": {
+    "grounding": 2,
+    "recurring_issues": 3,
+    "actionability": 3,
+    "clarity": 3,
+    "transparency": 2
+  },
+  "A_run2": {
+    "grounding": 2,
+    "recurring_issues": 3,
+    "actionability": 3,
+    "clarity": 2,
+    "transparency": 2
+  },
+  "A_run3": {
+    "grounding": 2,
+    "recurring_issues": 3,
+    "actionability": 3,
+    "clarity": 3,
+    "transparency": 2
+  },
+  "B_run1": {
+    "grounding": 2,
+    "recurring_issues": 2,
+    "actionability": 3,
+    "clarity": 3,
+    "transparency": 1
+  },
+  "B_run2": {
+    "grounding": 2,
+    "recurring_issues": 2,
+    "actionability": 3,
+    "clarity": 3,
+    "transparency": 1
+  },
+  "B_run3": {
+    "grounding": 2,
+    "recurring_issues": 2,
+    "actionability": 3,
+    "clarity": 3,
+    "transparency": 1
+  },
+  "C_run1": {
+    "grounding": 3,
+    "recurring_issues": 3,
+    "actionability": 4,
+    "clarity": 3,
+    "transparency": 4
+  },
+  "C_run2": {
+    "grounding": 2,
+    "recurring_issues": 3,
+    "actionability": 4,
+    "clarity": 3,
+    "transparency": 3
+  },
+  "C_run3": {
+    "grounding": 2,
+    "recurring_issues": 3,
+    "actionability": 4,
+    "clarity": 3,
+    "transparency": 4
+  }
+}

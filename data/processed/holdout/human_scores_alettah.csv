@@ -1,0 +1,16 @@
+rater,brief,dimension,score,justification
+alettah,Brief 1,grounding,2,"some counts arent correct , the report says 3 complaints but lists 4"
+alettah,Brief 1,recurring_issues,2,it identifies and ranks common issues but some counts are inconsistent with the category table 
+alettah,Brief 1,actionability,4,The recommendations addresses specific customer problems and includes complint IDs and suggests practical action
+alettah,Brief 1,clarity,2,the main finding is listed third and a busy manager would need to read through the report to identify it
+alettah,Brief 1,transparency,2,category counts are there but does not explain the classification method and does not identify ambigious complaints or discuss limitations of a small sample
+alettah,Brief 2,grounding,2,fraud complaints are 5 but the classification list states 6
+alettah,Brief 2,recurring_issues,3,identifies and ranks recurring issues and highlights serious problems such as fraud but there are no clear counts of issues
+alettah,Brief 2,actionability,3,suggests practical solutions and identifies customer problems but do not reference complaints IDs
+alettah,Brief 2,clarity,4,"main finding clear,top priorities easily identified and report is easy to understand"
+alettah,Brief 2,transparency,2,dosent overclaim but dosent explain classification method
+alettah,Brief 3,grounding,4,all findings are supported  
+alettah,Brief 3,recurring_issues,4,"identifies ranls and recurring issues , has category counts and highlights serious problems such as fraud"
+alettah,Brief 3,actionability,4,"addresses specific problems, include complaint id and suggests practical actions"
+alettah,Brief 3,clarity,4,"main finding clear,top priorities easily identified and report is easy to understand"
+alettah,Brief 3,transparency,4,"it explains how complaints were classified and counted , identifies ambigious complaints and acknowledges limitations of the small sample "
