@@ -2,18 +2,44 @@
 
 *Classification results, written summary and governance memo*
 
+<p align="center">
+
 ![INFO 4340](https://img.shields.io/badge/INFO%204340-Analytics%20and%20AI-8a0f2b)
-![Claude Haiku](https://img.shields.io/badge/writer-Claude%20Haiku%205.5-D97757)
-![Claude Sonnet](https://img.shields.io/badge/judge-Claude%20Sonnet%205.5-D97757)
+![Claude Haiku](https://img.shields.io/badge/writer-Claude%20Haiku%205.5-D97757?logo=anthropic&logoColor=white)
+![Claude Sonnet](https://img.shields.io/badge/judge-Claude%20Sonnet%205.5-D97757?logo=anthropic&logoColor=white)
 ![Human in the loop](https://img.shields.io/badge/governance-human%20in%20the%20loop-2e7d32)
+
+</p>
+
+<p align="center">
+
 ![Held-out accuracy](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FAlettah541%2FCFPB-FINAL-PROJECT%2Fmain%2Foutputs%2Fbadges%2Faccuracy.json)
 ![Blind kappa](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FAlettah541%2FCFPB-FINAL-PROJECT%2Fmain%2Foutputs%2Fbadges%2Fkappa.json)
 ![Rubric kappa](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FAlettah541%2FCFPB-FINAL-PROJECT%2Fmain%2Foutputs%2Fbadges%2Frubric_kappa.json)
 ![Judge gate](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FAlettah541%2FCFPB-FINAL-PROJECT%2Fmain%2Foutputs%2Fbadges%2Fjudge_gate.json)
 ![MDD](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FAlettah541%2FCFPB-FINAL-PROJECT%2Fmain%2Foutputs%2Fbadges%2Fmdd.json)
 
+</p>
+
 **Alettah Mandigo and Hunter Case**
-INFO 4340, Fall 2026, University of Denver
+INFO 4340 - AI and Analytics
+Fall 2026
+University of Denver, Daniels College of Business
+
+## Project Technology Stack
+
+<p align="center">
+
+![Claude API](https://img.shields.io/badge/Claude%20API-D97757?logo=anthropic&logoColor=white)
+![Anaconda](https://img.shields.io/badge/Anaconda-44A833?logo=anaconda&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white)
+
+</p>
+
 
 > [!TIP]
 > **Start here:** open [notebooks/final_project.ipynb](notebooks/final_project.ipynb) and the [back-test](notebooks/backtest_governance.ipynb). Both run offline from the saved outputs.
@@ -48,8 +74,14 @@ Reading consumer complaints one at a time is slow and costly. This project asks 
 - **Cost:** one 31-complaint run uses about 19,500 tokens for Prompt C and about 15,000 for Prompt A (about 629 and 484 tokens per complaint).
 
 <p align="center">
-  <img src="outputs/accuracy_by_prompt.png" width="350" alt="Held-out accuracy by prompt, with 95% bootstrap CIs">
-  <img src="outputs/Prompt_C_Confusion_Matrix.png" width="500" alt="Prompt C confusion matrix on the held-out set">
+
+<table>
+<tr>
+<td align="center"><img src="outputs/accuracy_by_prompt.png" width="420" alt="Held-out accuracy by prompt, with 95% bootstrap CIs"></td>
+<td align="center"><img src="outputs/Prompt_C_Confusion_Matrix.png" width="420" alt="Prompt C confusion matrix on the held-out set"></td>
+</tr>
+</table>
+
 </p>
 
 > [!NOTE]
