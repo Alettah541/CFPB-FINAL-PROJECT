@@ -22,8 +22,11 @@
 </p>
 
 **Alettah Mandigo and Hunter Case**
+
 INFO 4340 - AI and Analytics
+
 Fall 2026
+
 University of Denver, Daniels College of Business
 
 ## Project Technology Stack
