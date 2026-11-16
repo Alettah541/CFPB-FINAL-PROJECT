@@ -70,11 +70,12 @@ Reading consumer complaints one at a time is slow and costly. This project asks 
 | Judge vs human mean kappa | **0.544** | Below our 0.60 threshold |
 | Token cost per complaint | **629 (C) / 484 (A)** | One 31-complaint run |
 
-- **Classification accuracy is 50% on a held-out set of 30 complaints** (15 of 30 correct; 95% bootstrap CI 33% to 67%). All three prompts (A, B, C) scored the same. The majority-category baseline scores 13.3%. Prompt C's macro F1 is 0.465 across the eight categories (summary table in `final_project.ipynb`, cell 29).
+- **Classification accuracy is 50% on a held-out set of 30 complaints** (15 of 30 correct for each prompt). The 95% bootstrap confidence intervals are 33.2% to 70.0% for Prompt A and 33.3% to 66.7% for Prompts B and C. All three prompts scored the same. The majority-category baseline scores 13.3%. Prompt C's macro F1 is 0.465 across the eight categories (summary table in `final_project.ipynb`, cell 29).
 - **Human raters agree only fairly on categories:** blind classification kappa is 0.272 (11 of 30 complaints matched). Rubric scores agree better, with linearly weighted kappa of 0.651.
 - **Prompt C writes the best briefs:** it scores 19.5 of 20 on the rubric by the human raters, against 13.0 for A and B. The gap of 6.5 points is larger than the minimum detectable difference (MDD) of 2.14.
 - **The AI judge agrees with the human mean at kappa 0.544,** which is below our 0.60 threshold, so the judge should not sign off alone.
 - **Cost:** one 31-complaint run uses about 19,500 tokens for Prompt C and about 15,000 for Prompt A (about 629 and 484 tokens per complaint).
+> **Cost assumption:** dollar figures use Claude Haiku 5.5 rates of $0.10 per million input tokens and $0.50 per million output tokens (prompts under 100,000 tokens), taken from third-party pricing summaries. They are estimates; confirm against Anthropic's pricing page. Calculated by `src/cost_estimate.py`.
 
 <p align="center">
 
@@ -138,7 +139,8 @@ CFPB-FINAL-PROJECT/
 ├── src/                # helper functions and assets
 │   ├── agreement.py    # MDD and classification kappa
 │   ├── draw_holdout.py # draws the stratified held-out sample
-│   └── plot_accuracy.py # accuracy chart with bootstrap CIs
+│   ├── plot_accuracy.py # accuracy chart with bootstrap CIs
+│   └── cost_estimate.py # token cost estimate from the saved outputs
 ├── docs/               # memo, written summary draft, EDA findings
 └── outputs/            # figures and tables the notebook creates
 ```
