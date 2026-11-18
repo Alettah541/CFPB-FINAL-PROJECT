@@ -142,6 +142,7 @@ CFPB-FINAL-PROJECT/
 │   ├── plot_accuracy.py # accuracy chart with bootstrap CIs
 │   ├── plot_score_gap.py # brief score gap vs MDD chart
 │   ├── macro_f1_ci.py  # bootstrap CIs for macro F1
+│   ├── kappa_gap_ci.py # bootstrap CIs for the kappas and the brief score gap
 │   ├── make_badges.py  # writes README badge JSON
 │   └── cost_estimate.py # token cost estimate from the saved outputs
 ├── docs/               # governance memo, written summary and final deck (PDFs); EDA findings
