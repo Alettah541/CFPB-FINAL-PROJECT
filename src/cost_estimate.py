@@ -3,9 +3,8 @@
 Reads the token counts saved in data/processed/holdout/generation_results.json and
 applies the published Claude Haiku 5.5 rates for prompts under 100,000 tokens.
 
-Rates are an ASSUMPTION (see README, "Cost assumption"): $0.10 per million input tokens
-and $0.50 per million output tokens, taken from third-party pricing summaries. Confirm
-them against Anthropic's pricing page before publishing a cost figure.
+Rates (see README, "Cost assumption"): $0.10 per million input tokens and $0.50 per
+million output tokens, as published by Anthropic as of November 2026.
 
 Run from anywhere: python src/cost_estimate.py
 """

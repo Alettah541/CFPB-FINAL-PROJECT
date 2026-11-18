@@ -62,20 +62,20 @@ Reading consumer complaints one at a time is slow and costly. This project asks 
 
 | Measure | Result | What it means |
 |---|---|---|
-| Accuracy vs CFPB label (held-out, n = 30) | **50%** (CI 33% to 67%) | Same for all three prompts; baseline 13.3% |
+| Accuracy vs CFPB label (held-out, n = 30) | **50%** (CI 33.2% to 70.0% for A; 33.3% to 66.7% for B and C) | Same for all three prompts; baseline 13.3% |
 | Prompt C macro F1 | **0.465** | Across the eight categories |
 | Blind classification kappa (two raters) | **0.272** | Fair agreement, 11 of 30 matched |
 | Rubric kappa (two raters) | **0.651** | Above our 0.60 threshold |
 | Brief score, Prompt C vs A and B | **19.5 vs 13.0** | Gap of 6.5 points, MDD is 2.14 |
-| Judge vs human mean kappa | **0.544** | Below our 0.60 threshold |
+| Judge vs human kappa (mean of the two raters' kappas against the judge: 0.537, 0.550) | **0.544** | Below our 0.60 threshold |
 | Token cost per complaint | **629 (C) / 484 (A)** | One 31-complaint run |
 
-- **Classification accuracy is 50% on a held-out set of 30 complaints** (15 of 30 correct for each prompt). The 95% bootstrap confidence intervals are 33.2% to 70.0% for Prompt A and 33.3% to 66.7% for Prompts B and C. All three prompts scored the same. The majority-category baseline scores 13.3%. Prompt C's macro F1 is 0.465 across the eight categories (summary table in `final_project.ipynb`, cell 29).
+- **Classification accuracy is 50% on a held-out set of 30 complaints** (15 of 30 correct for each prompt). The 95% bootstrap confidence intervals are 33.2% to 70.0% for Prompt A and 33.3% to 66.7% for Prompts B and C. All three prompts scored the same. The majority-category baseline scores 13.3%. Prompt C's macro F1 is 0.465 across the eight categories (summary table in `final_project.ipynb`, cell 31). Macro F1 95% bootstrap CIs are 0.27 to 0.61 (A), 0.28 to 0.61 (B) and 0.27 to 0.60 (C), from `src/macro_f1_ci.py`.
 - **Human raters agree only fairly on categories:** blind classification kappa is 0.272 (11 of 30 complaints matched). Rubric scores agree better, with linearly weighted kappa of 0.651.
 - **Prompt C writes the best briefs:** it scores 19.5 of 20 on the rubric by the human raters, against 13.0 for A and B. The gap of 6.5 points is larger than the minimum detectable difference (MDD) of 2.14.
-- **The AI judge agrees with the human mean at kappa 0.544,** which is below our 0.60 threshold, so the judge should not sign off alone.
+- **The AI judge agrees with the humans at kappa 0.544 (the mean of the two raters' linearly weighted kappas against the judge),** which is below our 0.60 threshold, so the judge should not sign off alone.
 - **Cost:** one 31-complaint run uses about 19,500 tokens for Prompt C and about 15,000 for Prompt A (about 629 and 484 tokens per complaint).
-> **Cost assumption:** dollar figures use Claude Haiku 5.5 rates of $0.10 per million input tokens and $0.50 per million output tokens (prompts under 100,000 tokens), taken from third-party pricing summaries. They are estimates; confirm against Anthropic's pricing page. Calculated by `src/cost_estimate.py`.
+> **Cost assumption:** dollar figures use Claude Haiku 5.5 rates of $0.10 per million input tokens and $0.50 per million output tokens (prompts under 100,000 tokens), as published by Anthropic as of November 2026. The dollar figures are estimates computed from the saved token counts. Calculated by `src/cost_estimate.py`.
 
 <p align="center">
 
@@ -140,8 +140,11 @@ CFPB-FINAL-PROJECT/
 │   ├── agreement.py    # MDD and classification kappa
 │   ├── draw_holdout.py # draws the stratified held-out sample
 │   ├── plot_accuracy.py # accuracy chart with bootstrap CIs
+│   ├── plot_score_gap.py # brief score gap vs MDD chart
+│   ├── macro_f1_ci.py  # bootstrap CIs for macro F1
+│   ├── make_badges.py  # writes README badge JSON
 │   └── cost_estimate.py # token cost estimate from the saved outputs
-├── docs/               # memo, written summary draft, EDA findings
+├── docs/               # governance memo, written summary, EDA findings, final deck (PDF and Word sources)
 └── outputs/            # figures and tables the notebook creates
 ```
 
@@ -166,7 +169,7 @@ CFPB-FINAL-PROJECT/
 > [!WARNING]
 > These results describe one 30-complaint sample. Treat them as a first estimate, not a precise rate.
 
-- The held-out sample is 30 complaints. Accuracy confidence intervals are wide (about 33% to 67%), so the numbers are a first estimate, not a precise rate.
+- The held-out sample is 30 complaints. Accuracy confidence intervals are wide (about 33% to 70%), so the numbers are a first estimate, not a precise rate.
 - Prompt C was compared with A and B on the same 30 complaints, and the back-test thresholds were set after seeing those results. Those results are in-sample and probably optimistic.
 - Blind classification kappa of 0.272 means the eight-category scheme is not reliable enough for unattended automation, even between trained people.
 - The brief check counts only table and bullet counts. Counts written in prose are not checked.
@@ -175,4 +178,4 @@ CFPB-FINAL-PROJECT/
 
 ## AI Use
 
-We used Claude to draft and debug code and to draft written sections, and we checked every number against the saved outputs. Our full AI use logs are submitted on Canvas.
+We used Claude (Claude Code) to draft and debug code and to draft written sections, and ChatGPT to generate one decorative image on the presentation (credited on the slide). We checked every number against the saved outputs. Our full AI use logs are submitted on Canvas.
