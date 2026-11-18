@@ -144,7 +144,7 @@ CFPB-FINAL-PROJECT/
 │   ├── macro_f1_ci.py  # bootstrap CIs for macro F1
 │   ├── make_badges.py  # writes README badge JSON
 │   └── cost_estimate.py # token cost estimate from the saved outputs
-├── docs/               # governance memo, written summary, EDA findings, final deck (PDF and Word sources)
+├── docs/               # governance memo, written summary and final deck (PDFs); EDA findings
 └── outputs/            # figures and tables the notebook creates
 ```
 
